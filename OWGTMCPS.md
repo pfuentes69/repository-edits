@@ -43,6 +43,8 @@ include-before: |
 
 \newpage
 
+> **NOTICE:** From 2026-12-15 **TO BE CONFIRMED**, this version 4.2 of the OWGTM CP/CPS is superseded by the [OWGTM TLS CP/CPS](OWGTMTLSCPS.md) (OID 2.16.756.5.14.9.1) and the [OWGTM S/MIME and Client Certificates CP/CPS](OWGTMSMIMECPS.md) (OID 2.16.756.5.14.9.2). This version remains available for reference, and applies to the certificates issued while it was in force.
+
 # 1. INTRODUCTION
 
 This document represents a combined Certificate Policy (CP) and Certification Practice Statement (CPS), and describes the practices followed with regard to the management of the lifecycle the Certification Authorities adhered to the OISTE/WISeKey Global Trust Model (OWGTM from now on).

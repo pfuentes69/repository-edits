@@ -5,8 +5,15 @@ This repository contains all the public documents of the OISTE-WISeKey Trust Mod
 ## Markdown documents
 (New and valid versions)
 
-1. [OWGTM CPS](https://github.com/OISTE/repository/blob/main/OWGTMCPS.md)
-2. [WISeKey Privacy Notice](https://github.com/OISTE/repository/blob/main/PRIVACYNOTICE.md)
+1. [OWGTM TLS CP/CPS](https://github.com/OISTE/repository/blob/main/OWGTMTLSCPS.md) (TLS server certificates)
+2. [OWGTM S/MIME and Client Certificates CP/CPS](https://github.com/OISTE/repository/blob/main/OWGTMSMIMECPS.md) (S/MIME, client authentication and document signing certificates)
+3. [WISeKey Privacy Notice](https://github.com/OISTE/repository/blob/main/PRIVACYNOTICE.md)
+
+The text shared by the OWGTM CP/CPS documents is kept identical. Run `python3 tools/check_common_sections.py OWGTMTLSCPS.md OWGTMSMIMECPS.md` before each release.
+
+### Superseded CP/CPS
+
+1. [OWGTM CP/CPS v4.2](https://github.com/OISTE/repository/blob/main/OWGTMCPS.md) (combined CP/CPS, superseded from 2026-12-15 by the two documents above)
 
 ### Ecosystem-specific CP/CPS
 
@@ -59,8 +66,9 @@ Naming applications to be completed by an authorized representative when request
 
 
 **Note:**
-    Converted with command:
+    Converted with command (GitHub-style identifiers keep the internal links working in the PDF):
 
-    pandoc -s -f markdown-implicit_figures -o ./pdf/OWGTMCPS.pdf OWGTMCPS.md
+    pandoc -s -f markdown-implicit_figures+gfm_auto_identifiers -o ./pdf/OWGTMTLSCPS.pdf OWGTMTLSCPS.md
+    pandoc -s -f markdown-implicit_figures+gfm_auto_identifiers -o ./pdf/OWGTMSMIMECPS.pdf OWGTMSMIMECPS.md
 
 <END>
